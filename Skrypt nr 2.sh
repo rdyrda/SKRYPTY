@@ -3,18 +3,15 @@
 
 if [ $# -lt 1 ]; then           # jezeli nie podano argumentow
   echo "Podaj nazwe pliku!"
-  exit
 fi
 
 if [ ! -f "$1" ]; then          # jezeli podany jako argument plik nie istnieje
   echo "Plik $1 nie istnieje!"
-  exit
 fi
 
 rozmiar=`cat "$1" | wc -l`      # liczba wierszy w pliku
 if [ $rozmiar -eq 0 ]; then     # jezeli liczba wierszy w pliku wynosi 0
   echo "Plik $1 jest pusty!"
-  exit
 fi
 
 min=`cat "$1" | head -n 1`     # na poczatku max i min równają się pierwszej
