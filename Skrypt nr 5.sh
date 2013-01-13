@@ -1,5 +1,5 @@
 #v+
-#!/bin/bash
+#!/bin/sh
 a=0
 koment=""
 while true; do
