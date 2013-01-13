@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Skrypt wczytuje liczby i wypisuje max., min. i sume
 
 if [ $# -lt 1 ]; then           # jezeli nie podano argumentow
