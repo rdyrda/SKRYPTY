@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # ./skr9 plik rozmiar
 # Program dzieli plik na czesci po `rozmiar' wierszy.
 
