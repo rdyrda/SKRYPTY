@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # ./skr8 katalog
 # Program dla kazdego podkatalogu zadanego katalogu wyswietla
 # sumaryczna wielkosc znajdujacych sie tam plikow.
