@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 echo "Podaj pierwsza liczbe"
 read a
 echo "Podaj druga liczbe"
 read b
-if [ -z "$a" -o -z "$b" ];
+if [ -z "$a" -z "$b" ];
 then
 echo "\nZmienne nie moga byc puste !"
 else
@@ -25,7 +25,7 @@ elif [ "$c" = "/" ];
 then
 if [ "$b" = "0" ];
 then
-echo "\nNie mozna dzielic przez 0!"
+echo "Nie mozna dzielic przez 0!"
 else
 echo -n "$a / $b = "
 expr $a / $b
