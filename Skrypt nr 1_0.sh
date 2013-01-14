@@ -28,7 +28,6 @@ do
 		   expr $a / $b 
 		 fi ;;
     *) echo -e "Nie wybrales nic sposrod wymienionych"
-		  
   esac
   break
 done 
