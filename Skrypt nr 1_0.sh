@@ -15,18 +15,18 @@ select c in 'dodawanie' 'odejmowanie' 'mnozenie' 'dzielenie'
 do
   case $c in
     'dodawanie') echo -n "$a + $b = "  
-  			 expr $a + $b ;;
+  		 expr $a + $b ;;
     'odejmowanie') echo -n "$a - $b = " 
-				   expr $a - $b ;;
+		   expr $a - $b ;;
     'mnozenie') echo -n "$a * $b = "  
-				expr $a \* $b ;;
+		expr $a \* $b ;;
     'dzielenie') if [ "$b" = "0" ]
-				 then
-				   echo "Nie mozna dzielic przez 0!"
-				 else 
-				   echo -n "$a / $b = "
-				   expr $a / $b 
-				 fi ;;
+		 then
+		   echo "Nie mozna dzielic przez 0!"
+		 else 
+		   echo -n "$a / $b = "
+		   expr $a / $b 
+		 fi ;;
     *) echo -e "Nie wybrales nic sposrod wymienionych"
 		  
   esac
