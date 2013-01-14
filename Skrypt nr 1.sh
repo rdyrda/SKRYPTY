@@ -9,7 +9,7 @@ if [ -z "$a" -z "$b" ];
 then
 echo "\nZmienne nie moga byc puste !"
 else
-echo -e "\nPodaj dzialanie, ktore chcesz wykonac\n(+) dodawanie\n(-) odejmowanie\n(*) mnozenie\n(/) dzielenie\n(inny znak) wszystkie dzialania "
+echo -e "\nPodaj dzialanie, ktore chcesz wykonac\n(+) dodawanie\n(-) odejmowanie\n(*) mnozenie\n(/) dzielenie "
 read c
 if [ "$c" = "+" ];
 then
