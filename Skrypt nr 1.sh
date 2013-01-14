@@ -1,4 +1,5 @@
 #!/bin/sh
+# Wersja 1
 echo "Podaj pierwsza liczbe"
 read a
 echo "Podaj druga liczbe"
