@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Wersja 1
 # Autor: Rafal Dyrda
 echo "Podaj pierwsza liczbe"
