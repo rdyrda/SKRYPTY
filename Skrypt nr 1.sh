@@ -1,5 +1,6 @@
 #!/bin/sh
 # Wersja 1
+# Autor: Rafal Dyrda
 echo "Podaj pierwsza liczbe"
 read a
 echo "Podaj druga liczbe"
