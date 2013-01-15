@@ -5,7 +5,7 @@ echo -e "Zgadnij liczbe"
 echo -e "Gra polega na odgadnieciu liczby z przedzialu od 1 do 5"
 echo "Gre rozpoczynasz sie z kwota 100 zl. Za kazda prawidlowa odpowiedz +40 zl, z kolei bledna -20 zl."
 echo "Wygrywasz zdobywajac 500 zl. Przegrywasz majac 0 zl."
-echo""
+echo ""
 
 kwota=100
 zakres=5
