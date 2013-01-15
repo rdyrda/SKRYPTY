@@ -1,5 +1,4 @@
 #!/bin/bash
-# ./skr9 plik rozmiar
 # Program dzieli plik na czesci po `rozmiar' wierszy.
 
 if [ $# -ne 2 ]; then
