@@ -4,13 +4,13 @@ clear
 echo -e "Zgadnij liczbe"
 echo -e "Gra polega na odgadnieciu liczby z przedzialu od 1 do 5"
 echo "Gre rozpoczynasz sie z kwota 100 zl. Za kazda prawidlowa odpowiedz +40 zl, z kolei bledna -20 zl."
-echo "Wygrywasz zdobywajac 500 zl. Przegrywasz majac 0 zl."
+echo "Wygrywasz zdobywajac 300 zl. Przegrywasz majac 0 zl."
 echo""
 
 kwota=100
 zakres=5
 
-until [ $kwota -le 0 ] || [ $kwota -ge 500 ]
+until [ $kwota -le 0 ] || [ $kwota -ge 300 ]
 do
     liczba=$RANDOM
     let "liczba%=$zakres"
@@ -34,5 +34,5 @@ if [ $kwota -eq 0 ]
 then
     echo -e "PRZEGRALES. Straciles wszystkie pieniadze!"
 else    
-    echo -e "GRATULACJE! Wygrales 500 zl!"
+    echo -e "GRATULACJE! Wygrales 300 zl!"
 fi
