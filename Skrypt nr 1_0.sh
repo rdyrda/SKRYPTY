@@ -27,6 +27,8 @@ function autor
   exit
 }
 
+#################################################
+
 echo "Podaj pierwsza liczbe"
 read a
 echo "Podaj druga liczbe"
