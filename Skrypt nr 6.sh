@@ -1,5 +1,34 @@
 #!/bin/bash
-# Autor: Rafal Dyrda
+
+function pomoc
+{
+  echo -e "Program wyswietla menu, w którym wyiera sie 1 z 4 dzialan arytmetycznych po czym je wykonuje\n"
+  echo "Skladnia: ./skrypt nr 1_0.sh lub"
+  echo " ./skrypt nr 1_0.sh OPCJA"
+  echo -e "\nDostepne opcje:\n\n -a Wyswietla informacje o autorze"
+  echo -e "\n -h Wyswietla pomoc i liste opcji"
+  echo -e "\n -v Wyswietla informacje o wersji programu"
+  exit
+}
+
+#################################################
+
+function wersja
+{
+  echo "Wersja 1.0"
+  exit
+}
+
+#################################################
+
+function autor
+{
+  echo "Autorem tego skryptu jest Rafal Dyrda"
+  exit
+}
+
+#################################################
+
 clear
 echo -e "Zgadnij liczbe"
 echo -e "Gra polega na odgadnieciu liczby z przedzialu od 1 do 5"
@@ -36,3 +65,16 @@ then
 else    
     echo -e "GRATULACJE! Wygrales 300 zl!"
 fi
+
+#################################################
+
+while getopts ":a :h :v" opt
+do
+case "$opt"
+in
+h) pomoc >&2 ; exit;;
+v) wersja >&2 ; exit;;
+a) autor >&2 ; exit;;
+\?) echo -e "Bledna opcja: -$OPTARG\nSprobuj -h zeby wyswietlic pomoc" >&2 ; exit;;
+esac
+done
